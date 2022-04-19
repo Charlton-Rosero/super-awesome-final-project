@@ -7,13 +7,13 @@ router.get("/", (req, res) => res.send("This is the root"));
 
 router.post(`/artist`, controllers.createArtist);
 
-router.get(`/artist`, controllers.getBand);
+router.get(`/artist`, controllers.getArtist);
 
 
-router.put(`/artist/:id`, controllers.updateBand);
+router.put(`/artist/:id`, controllers.updateArtist);
 ;
-router.delete(`/artist/:name`, controllers.deleteAll);
-router.delete(`/artist/:id`, controllers.deleteBandById);
+router.delete(`/artistbyname/:name`, controllers.deleteAll);
+router.delete(`artist/:id`, controllers.deleteArtistById);
 
 
 module.exports = router;
