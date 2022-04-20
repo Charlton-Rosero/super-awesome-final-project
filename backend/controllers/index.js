@@ -41,16 +41,16 @@ async function getArtist(req, res) {
 
   
   async function deleteArtistById(req, res) {
+
     try {
       const { id } = req.params;
       const deleted = await Artist.findByIdAndDelete({id});
 
       if (deleted) {
-        return res.status(200).send(`Delete Artist`);
+        return res.status(200).send(`Deleted Artist`);
       }
 
       throw new Error(`Artist not found`);
-
     } catch (error) {
       return res.status(500).send(error.message);
     }
@@ -62,7 +62,7 @@ async function getArtist(req, res) {
       const { name } = req.params;
       const deleted = await Artist.deleteMany({name});
       if (deleted) {
-        return res.status(200).send(`Delete Artist`);
+        return res.status(200).send(`Deleted Artist`);
       }
       throw new Error(`Artist not found`);
     } catch (error) {

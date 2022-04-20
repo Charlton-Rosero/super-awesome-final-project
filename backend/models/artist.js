@@ -6,8 +6,8 @@ const Artist = new Schema( {
     name: { type: String, required: true },
     genre:{type: String, required: true},
     years_active:{type:String, required: true},
-    members:{type:String, required: true},
-    labels:{type:String, required: true},
+    members:{type:String, required: false},
+    labels:{type:String, required: false},
     bio:{type:String, required: false},
 },
 
