@@ -1,15 +1,19 @@
-import axios from "axios";
+import axios from 'axios'
 
-async function fetchData() {
-  try {
-    const response = await axios(
-      `http://localhost:3000/artist`
-    );
-    console.log(response);
-    return response;
-  } catch (error) {
-    console.log(error);
-  }
+
+async function fetchData(){
+    const DEFAULT_URL = `https://myartists-api.herokuapp.com/artist`
+    try{
+        const response = await axios.get(DEFAULT_URL)
+        console.log(response.data.artist);
+
+        return response.data
+    
+    }
+    catch (error) {
+        console.log(error)
+    }  
+
 }
 
-export default fetchData;
+export default fetchData
