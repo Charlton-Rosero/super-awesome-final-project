@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react';
 import apiUrl from '../../apiConfig';
-
+import {NavLink} from 'react-router-dom'
 
 function Artist(){
     const [artist, setArtist] = useState([])
@@ -23,9 +23,7 @@ function Artist(){
 
     const artistData = artist.map((artist, index) => {
         return <li key={artist._id}>
-              {artist.name}
-              {artist.genre}
-              {artist.members}
+         <NavLink to={`/artist/${artist._id}`}>{artist.name}</NavLink>
         </li>
     })
 

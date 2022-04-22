@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react';
 import apiUrl from '../../apiConfig';
-
+import {NavLink} from 'react-router-dom'
 
 function Jazz(){
     const [artist, setArtist] = useState([])
@@ -23,7 +23,7 @@ function Jazz(){
 
     const artistData = artist.map((artist, index) => {
         return <li key={artist._id}>
-            {artist.name}
+           <NavLink to={`/artist/${artist._id}`}>{artist.name}</NavLink>
         </li>
     })
 
