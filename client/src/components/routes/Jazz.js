@@ -8,7 +8,7 @@ function Jazz(){
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`${apiUrl}/Jazz`)
+            const response = await axios.get(`${apiUrl}/jazz`)
            
             setArtist(response.data.artist)
         } catch (error) {
@@ -23,7 +23,7 @@ function Jazz(){
 
     const artistData = artist.map((artist, index) => {
         return <li key={artist._id}>
-            
+            {artist.name}
         </li>
     })
 
