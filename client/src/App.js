@@ -2,18 +2,26 @@
 import './App.css';
 // import "bootstrap/dist/css/bootstrap.min.css"
 import { Route, Routes, useLocation } from 'react-router-dom'
-import Home from './components/routes/Home'
+import Jazz from './components/routes/Jazz';
 import { NavLink } from "react-router-dom";
-import fetchData from './service/constants';
+
 import Artist from './components/routes/Artist';
 function App() {
-fetchData()
+
   return (
     <div className="App">
+         <nav>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/artist">Artist</NavLink>
+        <NavLink to="/jazz">
+          Jazz
+        </NavLink>
+        </nav>    
       
       <Routes>
-         <Route path="/home" element={<Home />} />
+         
          <Route path="/artist" element={<Artist />} />
+         <Route path="/jazz" element={<Jazz />} />
       </Routes>
     </div>
   );

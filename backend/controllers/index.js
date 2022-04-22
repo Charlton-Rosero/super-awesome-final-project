@@ -18,7 +18,7 @@ const getArtistById = async (req,res) => {
 
 const getArtistByGenre = async (req,res) => {
   try {
-      const {genre} = req.params
+      const genre = req.params
       const artist = await Artist.find(genre)
       console.log(artist)
       if(artist){
