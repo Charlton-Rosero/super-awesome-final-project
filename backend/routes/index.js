@@ -8,7 +8,7 @@ router.get("/", (req, res) => res.send("This is the root"));
 router.post(`/artist`, controllers.createArtist);
 
 router.get(`/artist`, controllers.getArtist);
-// router.get(`/artist/:id`, controllers.getArtistById);
+router.get(`/artist/:id`, controllers.getArtistById);
 router.get(`/artist/:genre`, controllers.getArtistByGenre);
 
 router.put(`/artist/:id`, controllers.updateArtist);
