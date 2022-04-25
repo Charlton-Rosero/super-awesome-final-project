@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react';
-import apiUrl from '../../apiConfig';
-
+import { NavLink} from "react-router-dom";
 
 function HipHop(){
     const [artist, setArtist] = useState([])
@@ -23,12 +22,20 @@ function HipHop(){
 
     const artistData = artist.map((artist, index) => {
         return <li key={artist._id}>
-            {artist.name}
+           <NavLink to={`/artist/${artist._id}`}>{artist.name}</NavLink>
         </li>
     })
 
     return(
-        <div>
+        <div className='main-div'>
+             <nav className="navbar">
+            <h1>Groov-e</h1>
+            <div className="navlinks">
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/artist">Artists</NavLink>
+              <NavLink to="/create-artist" >Add Artist</NavLink>
+            </div>
+          </nav>
             {artistData}
         </div>
     )

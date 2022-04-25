@@ -12,6 +12,7 @@ import ClassicRock from './components/genre-boxes/ClassicRock';
 import Jazz from './components/genre-boxes/Jazz';
 import HipHop from './components/genre-boxes/HipHop';
 import Pop from './components/genre-boxes/Pop';
+import Disco from './components/genre-boxes/Disco';
 
 
 
@@ -33,6 +34,7 @@ function App() {
          <Route path="/artist/pop" element={<Pop />} />
          <Route path="/artist/jazz" element={<Jazz />} />
          <Route path="/artist/hiphop" element={<HipHop />} />
+         <Route path="/artist/disco" element={<Disco />} />
       </Routes>
 
 

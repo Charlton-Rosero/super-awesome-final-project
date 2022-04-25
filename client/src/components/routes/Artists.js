@@ -27,7 +27,7 @@ export default function Artists(){
         );
       });
     return(
-        <div>
+        <div className="main-div">
           <nav className="navbar">
           <h1>Groov-e</h1>
           <div className="navlinks">
@@ -36,7 +36,7 @@ export default function Artists(){
             <NavLink to="/create-artist" >Add Artist</NavLink>
           </div>
           </nav>
-        <h3>List of all Artist</h3>
+        <h3 >List of all Artist</h3>
         <ul>
             {artistData}
         </ul>

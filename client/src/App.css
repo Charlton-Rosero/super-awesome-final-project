@@ -3,24 +3,52 @@
   background-color: black;
   
 }
-.main-container{
-  color: white;
+body {
+
+  background-color: #000;
+
 }
+html{
+  background-color: #000;
+  height: 100%;
+}
+.form input{
+  margin: 10px;
+}
+.form textarea{
+  margin: 10px;
+}
+
 
 .genre-boxes {
   display: flex;
   justify-content: space-around;
   position: relative;
-  flex-direction:  column ;
+  flex-direction:  row ;
+  flex-wrap: wrap;
   text-decoration: none;
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid rgb(255, 252, 252);
+  border: 1px solid rgb(0, 0, 0);
   padding: 10px
 
 }
+.main-div{
+  height:100%;
+  color: white;
+  text-decoration: none;
+}
+.main-div h3{
+  font-weight: bold;
+  color: white;
+}
 
+
+.main-container{
+  font-weight: bolder;
+  color: white;
+}
 
 .beatles {
   background: url('./images/beatles.jpg');
@@ -38,6 +66,7 @@
   align-items: center;
 }
 .genre-item{
+  height: 226px;
   width: 400px;
   margin: 10px;
   font-size: 20px;
@@ -100,12 +129,17 @@
   padding: 10px;
   background-color: black;
   position: relative;
+  margin-bottom: 50px;
 
 }
 .navbar h1{
 color: rgb(255, 255, 255);
   
 }
+.artists h3{
+  color: rgb(255, 255, 255);
+    
+  }
 
 .navlinks a{
   padding: 10px;
@@ -117,4 +151,8 @@ color: rgb(255, 255, 255);
 
 .navlinks a:hover{
   color: rgb(132, 132, 132);
+}
+
+.artist{
+  color:white;
 }

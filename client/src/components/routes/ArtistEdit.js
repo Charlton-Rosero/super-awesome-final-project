@@ -58,7 +58,7 @@ export default function ArtistEdit(){
   }, []);
 
     return(
-      <div>
+      <div >
       <ArtistForm
         artist={artist}
         handleChange={(e) => handleChange(e)}
