@@ -7,11 +7,12 @@ import beatles from "../../images/beatles.jpg"
 import jazz from "../../images/DaveBrubeck.jpg"
 import pop from "../../images/elton.jpg"
 import hiphop from "../../images/biggie.png"
+import saxophone from "../../images/saxophone.png"
 
 
 const Home = () => {
     return(
-      <div>
+      <div className="main-container">
         <nav className="navbar">
         <h1>Groov-e</h1>
         <div className="navlinks">
@@ -30,11 +31,11 @@ const Home = () => {
           <div className="genre-item"><img src={pop}/><NavLink to='/artist/pop'>Pop</NavLink></div>
           <div className="genre-item"><img src={hiphop}/><NavLink to='/artist/hiphop'>hip-hop</NavLink></div> */}
           {/* ******************************** */}
-          <NavLink to='/artist/classical'><img className="genre-item" src={classical}/></NavLink>
-          <NavLink to='/artist/classicrock'><img className="genre-item" src={beatles}/></NavLink>
-          <NavLink to='/artist/jazz'><img className="genre-item" src={jazz}/></NavLink>
-          <NavLink to='/artist/pop'><img className="genre-item change_height" src={pop} /></NavLink>
-          <NavLink to='/artist/hiphop'><img className="genre-item change_height" src={hiphop}/></NavLink>
+          <div className="genre-container"><NavLink to='/artist/classical'><div><img className="genre-item" src={classical}/></div><p>Classical</p></NavLink></div>
+          <div className="genre-container"><NavLink to='/artist/classicrock'><div><img className="genre-item" src={beatles}/></div><p>Classic Rock</p></NavLink></div>
+          <div className="genre-container"><NavLink to='/artist/jazz'><div><img className="genre-item" src={jazz}/></div><p>Jazz</p></NavLink></div>
+          <div className="genre-container"><NavLink to='/artist/pop'><div><img className="genre-item " src={pop} /></div><p>Pop</p></NavLink></div>
+          <div className="genre-container"><NavLink to='/artist/hiphop'><div><img className="genre-item " src={hiphop}/></div><p>Hip-Hop</p></NavLink></div>
         </div>
 
 

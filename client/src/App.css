@@ -3,6 +3,9 @@
   background-color: black;
   
 }
+.main-container{
+  color: white;
+}
 
 .genre-boxes {
   display: flex;
@@ -38,6 +41,16 @@
   width: 400px;
   margin: 10px;
   font-size: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  background-size:cover
+
+}
+.genre-item img:hover {
+  width: 400px;
+  margin: 10px;
+  font-size: 20px;
+  filter: blur(2px);
   border: 1px solid rgb(255, 255, 255);
   overflow: hidden;
   background-size:cover
@@ -56,8 +69,27 @@
 }
 
 .genre-item img{
-  /* filter: blur(5px); */
   background-position: center;
+}
+.genre-container{
+  position: relative;
+  
+}
+.genre-container div:hover{
+  filter: blur(2px);
+  transition: 400ms;
+
+}
+.genre-container p{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  z-index: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
 
@@ -66,7 +98,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: black;position: relative;
+  background-color: black;
+  position: relative;
 
 }
 .navbar h1{
@@ -83,5 +116,5 @@ color: rgb(255, 255, 255);
 
 
 .navlinks a:hover{
-  color: rgb(159, 159, 159);
+  color: rgb(132, 132, 132);
 }
