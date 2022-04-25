@@ -8,10 +8,10 @@ The super-awesome-final-project app, aka Groov-e, is a wikipedia for music. That
 P.S. It does full CRUD
 
 ## Technologies used :computer:
-  -Node.js
-  -MongoDB/Mongoose
-  -Express
-  -React
+- Node.js
+- MongoDB/Mongoose
+- Express
+- React
   
 ## Wireframe
 ![Screenshot 2022-04-25 155748](https://user-images.githubusercontent.com/97997227/165165540-5a0edda8-80b7-4efc-a1c1-4f850e056329.png)
