@@ -1,14 +1,14 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react';
 import apiUrl from '../../apiConfig';
-import {NavLink} from 'react-router-dom'
 
-function Jazz(){
+
+function HipHop(){
     const [artist, setArtist] = useState([])
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`${apiUrl}/jazz`)
+            const response = await axios.get(`https://my-artists-api.herokuapp.com/artist-genre/hiphop`)
            
             setArtist(response.data.artist)
         } catch (error) {
@@ -23,7 +23,7 @@ function Jazz(){
 
     const artistData = artist.map((artist, index) => {
         return <li key={artist._id}>
-           <NavLink to={`/artist/${artist._id}`}>{artist.name}</NavLink>
+            {artist.name}
         </li>
     })
 
@@ -35,5 +35,4 @@ function Jazz(){
 
 }
 
-export default Jazz
-
+export default HipHop

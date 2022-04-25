@@ -2,18 +2,20 @@ import axios from 'axios'
 import { useState, useEffect } from 'react';
 import apiUrl from '../../apiConfig';
 
-function ClassicRock(){
+function Pop(){
     const [artist, setArtist] = useState([])
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`${apiUrl}/classic rock`)
-           
+            const response = await axios.get(`https://my-artists-api.herokuapp.com/artist-genre/pop`)
+
             setArtist(response.data.artist)
+
         } catch (error) {
             console.log(error)
         }
     }
+
     useEffect(() => {
         fetchData()
     },[])
@@ -34,4 +36,4 @@ function ClassicRock(){
 
 }
 
-export default ClassicRock
+export default Pop

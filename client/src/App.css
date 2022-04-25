@@ -1,3 +1,87 @@
 .App {
   text-align: center;
+  background-color: black;
+  
+}
+
+.genre-boxes {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  flex-direction:  column ;
+  text-decoration: none;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid rgb(255, 252, 252);
+  padding: 10px
+
+}
+
+
+.beatles {
+  background: url('./images/beatles.jpg');
+  height: 100%;
+  max-width: 100%;
+  /* filter: blur(5px); */
+  object-fit: contain;
+ background-size:cover
+}
+
+.artist{
+  display: flex;
+  flex-direction:  column ;
+  text-align: start;
+  align-items: center;
+}
+.genre-item{
+  width: 400px;
+  margin: 10px;
+  font-size: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  overflow: hidden;
+  background-size:cover
+
+}
+.change_height{
+  height: 226.09px;
+}
+
+.genre-item a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: absolute;
+  z-index: 30;
+  padding: auto;
+}
+
+.genre-item img{
+  /* filter: blur(5px); */
+  background-position: center;
+}
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: black;position: relative;
+
+}
+.navbar h1{
+color: rgb(255, 255, 255);
+  
+}
+
+.navlinks a{
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+
+
+.navlinks a:hover{
+  color: rgb(159, 159, 159);
 }
