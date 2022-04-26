@@ -16,7 +16,13 @@ P.S. It does full CRUD
 ## Wireframe
 ![Screenshot 2022-04-25 155748](https://user-images.githubusercontent.com/97997227/165165540-5a0edda8-80b7-4efc-a1c1-4f850e056329.png)
 
+![Screenshot 2022-04-26 160349](https://user-images.githubusercontent.com/97997227/165391672-de56ad57-6810-4679-8f34-37ded9bd6328.png)
+
+![Screenshot 2022-04-26 160415](https://user-images.githubusercontent.com/97997227/165391680-58839ad3-473a-411d-a721-71c320d4ce0e.png)
+
 ## Component Heirarchy
+
+![Screenshot 2022-04-26 170058](https://user-images.githubusercontent.com/97997227/165391737-1976242e-1fd2-49eb-8872-c7f4b5b41ba0.png)
 
 
 ## Dependencies
