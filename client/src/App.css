@@ -108,13 +108,14 @@ html{
   
 }
 .genre-container div:hover{
-  filter: blur(2px);
-  transition: 400ms;
-
+  filter: blur(3px);
+  transition: 700ms;
 }
 
+
 .genre-container p{
-  color: white;
+  text-shadow: 3px 2px black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 30px;
   position: absolute;
@@ -155,6 +156,7 @@ color: rgb(255, 255, 255);
 
 .navlinks a:hover{
   color: rgb(132, 132, 132);
+
 }
 
 .artist{
