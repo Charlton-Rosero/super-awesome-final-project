@@ -9,6 +9,7 @@ const Artist = new Schema( {
     members:{type:String, required: false},
     labels:{type:String, required: false},
     bio:{type:String, required: false},
+    img:{type:String, required: false}
 },
 
 {timestamps: true},

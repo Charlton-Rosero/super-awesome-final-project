@@ -21,9 +21,11 @@ export default function Artists(){
 
       const artistData = artists.map((artist, index) => {
         return (
-          <li key={artist._id}>
-            <NavLink to={`/artist/${artist._id}`}>{artist.name}</NavLink>
-          </li>
+          <div key={artist._id}>
+        <div className="genre-container"><NavLink to={`/artist/${artist._id}`}><div><img className="genre-item" src={artist.img}/></div><p>{artist.name}</p></NavLink>
+          </div>
+           
+          </div>
         );
       });
     return(
@@ -37,9 +39,9 @@ export default function Artists(){
           </div>
           </nav>
         <h3 >List of all Artist</h3>
-        <ul>
+        <div className="genre-boxes">
             {artistData}
-        </ul>
+       </div>
       </div>
     );
 }

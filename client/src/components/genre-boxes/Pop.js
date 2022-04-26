@@ -23,25 +23,30 @@ function Pop(){
     console.log(artist)
 
     const artistData = artist.map((artist, index) => {
-        return <li key={artist._id}>
-            <NavLink to={`/artist/${artist._id}`}>{artist.name}</NavLink>
-        </li>
-    })
-
+        return (
+          <div key={artist._id}>
+        <div className="genre-container"><NavLink to={`/artist/${artist._id}`}><div><img className="genre-item" src={artist.img}/></div><p>{artist.name}</p></NavLink>
+          </div>
+           
+          </div>
+        );
+      });
     return(
-        <div className='main-div'>
-            <nav className="navbar">
-                <h1>Groov-e</h1>
-                <div className="navlinks">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/artist">Artists</NavLink>
-                <NavLink to="/create-artist" >Add Artist</NavLink>
-                </div>
+        <div className="main-div">
+          <nav className="navbar">
+          <h1>Groov-e</h1>
+          <div className="navlinks">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/artist">Artists</NavLink>
+            <NavLink to="/create-artist" >Add Artist</NavLink>
+          </div>
           </nav>
+        <h3 >List of all Artist</h3>
+        <div className="genre-boxes">
             {artistData}
-        </div>
-    )
-
-}
+       </div>
+      </div>
+    );
+    }
 
 export default Pop

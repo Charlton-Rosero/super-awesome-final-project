@@ -32,12 +32,24 @@ const Home = () => {
           <div className="genre-item"><img src={hiphop}/><NavLink to='/artist/hiphop'>hip-hop</NavLink></div> */}
           {/* ******************************** */}
 
-          <div className="genre-container"><NavLink to='/artist/classical'><div><img className="genre-item" src={classical}/></div><p>Classical</p></NavLink></div>
-          <div className="genre-container"><NavLink to='/artist/disco'><div><img className="genre-item" src={disco}/></div><p>Disco</p></NavLink></div>
-          <div className="genre-container"><NavLink to='/artist/classicrock'><div><img className="genre-item" src={beatles}/></div><p>Classic Rock</p></NavLink></div>
-          <div className="genre-container"><NavLink to='/artist/jazz'><div><img className="genre-item" src={jazz}/></div><p>Jazz</p></NavLink></div>
-          <div className="genre-container"><NavLink to='/artist/pop'><div><img className="genre-item " src={pop} /></div><p>Pop</p></NavLink></div>
-          <div className="genre-container"><NavLink to='/artist/hiphop'><div><img className="genre-item " src={hiphop}/></div><p>Hip-Hop</p></NavLink></div>
+          <div className="genre-container"><NavLink to='/artist/classical'><div><img className="genre-item" src={classical}/></div><p>Classical</p></NavLink>
+          </div>
+
+          <div className="genre-container"><NavLink to='/artist/disco'><div><img className="genre-item" src={disco}/></div><p>Disco</p></NavLink>
+          </div>
+
+          <div className="genre-container"><NavLink to='/artist/classicrock'><div><img className="genre-item" src={beatles}/></div><p>Classic Rock</p></NavLink>
+          </div>
+
+          <div className="genre-container"><NavLink to='/artist/jazz'><div><img className="genre-item" src={jazz}/></div><p>Jazz</p></NavLink>
+          </div>
+
+          <div className="genre-container"><NavLink to='/artist/pop'><div><img className="genre-item " src={pop} /></div><p>Pop</p></NavLink>
+          </div>
+
+          <div className="genre-container"><NavLink to='/artist/hiphop'><div><img className="genre-item " src={hiphop}/></div><p>Hip-Hop</p></NavLink>
+          </div>
+
         </div>
 
 

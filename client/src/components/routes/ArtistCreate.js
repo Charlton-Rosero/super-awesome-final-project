@@ -12,7 +12,8 @@ export default function ArtistCreate(){
     name:'',
     genre:'',
     years_active:'',
-    bio:''
+    bio:'',
+    img:''
   });
 
   const [createArtist, setCreatedArtist] = useState(null);

@@ -21,8 +21,6 @@ function App() {
 
   return (
     <div className="App">
-
-      
       <Routes>
         <Route path="/" element={<Home />} /> 
          <Route path="/artist" element={<Artists />} />
@@ -36,8 +34,6 @@ function App() {
          <Route path="/artist/hiphop" element={<HipHop />} />
          <Route path="/artist/disco" element={<Disco />} />
       </Routes>
-
-
     </div>
   );
 }

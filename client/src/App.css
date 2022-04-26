@@ -65,6 +65,10 @@ html{
   text-align: start;
   align-items: center;
 }
+
+.change_height{
+  height: 226.09px;
+}
 .genre-item{
   height: 226px;
   width: 400px;
@@ -75,6 +79,7 @@ html{
   background-size:cover
 
 }
+
 .genre-item img:hover {
   width: 400px;
   margin: 10px;
@@ -85,9 +90,7 @@ html{
   background-size:cover
 
 }
-.change_height{
-  height: 226.09px;
-}
+
 
 .genre-item a{
   color: rgb(255, 255, 255);
@@ -109,6 +112,7 @@ html{
   transition: 400ms;
 
 }
+
 .genre-container p{
   color: white;
   font-weight: bold;
@@ -145,7 +149,7 @@ color: rgb(255, 255, 255);
   padding: 10px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-
+  font-weight: bold;
 }
 
 

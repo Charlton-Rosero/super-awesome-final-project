@@ -40,6 +40,13 @@ const ArtistForm = ({artist, handleSubmit, handleChange, cancelPath}) => {
         name="years_active"
         onChange={(e) => handleChange(e)}
       /><br/>
+
+      <input
+        placeholder="Artist image"
+        defaultValue={artist.img}
+        name="img"
+        onChange={(e) => handleChange(e)}
+      /><br/>
      
    
       <textarea cols={30} rows={5} type='text'

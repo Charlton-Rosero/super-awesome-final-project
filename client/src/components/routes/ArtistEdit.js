@@ -13,7 +13,8 @@ export default function ArtistEdit(){
     name:'',
     genre:'',
     years_active:'',
-    bio:''
+    bio:'',
+    img:''
   })
   const [updated, setUpdated] = useState(false);
 
