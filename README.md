@@ -20,7 +20,8 @@ The super-awesome-final-project app, aka Groov-e, is a wikipedia for music. That
 
 ## Component Heirarchy
 
-![Screenshot 2022-04-26 170058](https://user-images.githubusercontent.com/97997227/165391737-1976242e-1fd2-49eb-8872-c7f4b5b41ba0.png)
+![Screenshot 2022-04-27 000613](https://user-images.githubusercontent.com/97997227/165438483-dd9279d1-612d-40bc-bb0f-8935d4b492f0.png)
+
 
 
 ## Dependencies
