@@ -3,9 +3,7 @@ Netlify link: https://zingy-sundae-58fa67.netlify.app/
 
 Heroku link: https://my-artists-api.herokuapp.com/artist
 
-The super-awesome-final-project app, aka Groov-e, is a wikipedia for music. That's it.
-
-P.S. It does full CRUD
+The super-awesome-final-project app, aka Groov-e, is a wikipedia for music. That's it. It is a very simple app, but it does full CRUD operation and I do plan on adding more features. One of the features I want to add is a concert finder powered by songkick API, but unfortunately I am still waiting for my API key to get approved. 
 
 ## Technologies used :computer:
 - Node.js
@@ -44,7 +42,7 @@ P.S. It does full CRUD
 
 ## Upcoming Features(Post MVP)
 - Authorization
-- Concert finder (third party API)
+- Concert finder (Songkick API)
 - Authorization (signup/login)
 
 ## Endpoints for CRUD
